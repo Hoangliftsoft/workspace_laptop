@@ -1,0 +1,55 @@
+LÀM VIỆC VỚI CHUỖI
+
+var myString = 'Hoc JS tai F8'
+
+1.length
+	console.log(myString.length);	
+	-> return : chiều dài chuỗi
+
+2.Find index
+	console.log(myString.indexOf('JS'),2);	
+	-> return : stt kí tự (kí tự,vị trí cần tìm)
+	console.log(myString.lastIndexOf('JS'));
+	-> return : stt kí tự từ sau tới (kí tự)
+	console.log(myString.search('JS'));
+	-> return : stt kí tự theo biểu thức chính quy(kí tự)
+
+3.Cut string
+	console.log(myString.slice(4,6));
+	-> return : vị trí cut
+
+4.Replace
+	console.log(myString.replace('JS','Javascript'));
+	-> return : ghi đè chữ JS đầu tiên
+	console.log(myString.replace(/JS/g,'Javascript'));
+	-> return : ghi đè all chữ JS
+
+5.Convert to upper case
+	console.log(myString.toUpperCase());
+	-> return : all in hoa
+
+6.Convert to lower case
+	console.log(myString.toLowerCase());
+	-> return : all in thường
+
+7.Trim
+	console.log(myString.trim());
+	-> return : cut space 2 đầu
+
+8.Split
+	var languages = 'Javascript, PHP, Ruby';
+	console.log(languages.split(', '));
+	-> return : cắt chuỗi thành array cần điểm chung
+
+	var languages = Javascript;
+	console.log(languages.split(''));
+	-> return : cắt chuỗi thành array từng phần tử không cần điền
+
+ 9. Get a character by index
+	const myString2 = 'Son Dang';
+	console.long(myString2.charAt(0));
+	-> return : kí tự - không có có gtri String
+	console.long(myString2[0]);
+	-> return : kí tự - không có có gtri undefined
+	
+	

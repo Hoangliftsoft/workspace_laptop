@@ -1,0 +1,34 @@
+a = 'chuỗi'
+b = ...
+a.capitalize()	: viết hoa chữ cái đầu còn lại viết thường
+a.upper()			: tất cả các chữ điều được viết hoa
+a.lower			: tất cả chữ cái điều viết thường
+a.swapcase()		: viết thường thành hoa viết hoa thành thường
+a.title()			: viết hoa chữ cái đầu tiên còn lại viết thường
+a.center(30,' ')	: canh giữa đủ 30 đơn vị
+a.rjust(20,' ')	: canh phải đủ 20 đơn vị
+a.ljust(20,' ')	: canh trái đủ 20 đơn vị
+a.encode()			: mã hoá
+{	a = 'có gì hót'
+a.join(['1','2'])	: cộng chuỗi đan xen } => 1có gì hót2có gì hót
+a.replace('i',H) : thay vào chuỗi (,,2)
+a.strip('t')		: cắt bỏ chữ ở 2 đầu
+a.rstrip('t')		: cắt bỏ chữ ở đầu bên phải
+a.lstrip('t')		: cắt bỏ chữ ở đầu bên trái
+a.split(' ',2)	: cắt khoảng trống trong chuỗi từ trái qua
+a.rsplit(' ',2)	: cắt khoảng trống trong chuỗi từ phải qua
+a.partition('u'): cắt chia 2 bên chính nó từ trái qua
+a.rpartition('u'): cắt chia 2 bên chính nó từ phải qua
+a.count('c')		: điếm số lượng trong chuỗi (,star:0,end:10)
+a.startswith('h'): kiểm tra chữ cái bắt đầu	(,star:0,end:10)
+a.endswith('n')	: kiểm tra chữ cái kết thúc	(,star:0,end:10)
+a.find('u')		: vị trí chuỗi trong chuỗi từ trái qua
+a.rfind('u')		: vị trí chuỗi trong chuỗi từ phải qua
+a.index('u')		: vị trí chuỗi trong chuỗi từ trái qua ko thấy quăng lỗi
+a.rindex('u')		: vị trí chuỗi trong chuỗi từ phải qua ko thấy quăng lỗi
+a.isupper()		: kiểm tra có toàn bộ là viết hoa
+a.islower()		: kiểm tra có toàn bộ là viết thường
+a.isdigit()		: kiểm tra có toàn bộ có phải là số
+a.isspace()		: kiểm tra có toàn bộ có phải là khoảng trắng
+
+

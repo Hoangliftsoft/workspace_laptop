@@ -1,0 +1,501 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.color-while {
+    color: #fff !important;
+}
+
+.backgroud-color-while {
+    background-color: #fff;
+}
+
+/* 
+1.từ ngoài vào trong
+2.từ trên xuống dưới
+3.từ tổng quan đến chi tiết
+*/
+
+/* 
+1.vị trí
+2.kích thước
+3.màu sắc
+4.hình dáng
+*/
+
+
+/* begin header */
+#header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+    height: 46.5px;
+    background-color: #000;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav>li {
+    position: relative;
+    display: inline-block;
+}
+
+.nav>li>a {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.nav li a {
+    display: block;
+    padding: 0 24px;
+    line-height: 46.5px;
+    text-decoration: none;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.nav .subnav li:hover a,
+.nav>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav .subnav {
+    position: absolute;
+    list-style-type: none;
+    background-color: #fff;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav .subnav a {
+    font-size: 15px;
+    display: block;
+    color: #000;
+}
+
+.nav .down-icon {
+    margin-left: 3px;
+    font-size: 12px;
+}
+
+.nav-search:hover {
+    background-color: #f44336;
+}
+
+.nav-search {
+    padding: 0 23px;
+    line-height: 46.5px;
+    float: right;
+    display: inline-block;
+}
+
+.nav-search .search-icon {
+    color: #fff;
+}
+
+/* begin slider */
+#slider {
+    width: 100%;
+    padding-top: 50%;
+    margin-top: 46.5px;
+    position: relative;
+    background: url('../img/slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .slider-content {
+    left: 50%;
+    right: 0px;
+    bottom: 0px;
+    color: #fff;
+    padding: 32px 16px;
+    text-align: center;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.slider-content .slider-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.slider-content .slider-description {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+
+
+/* begin content */
+
+
+/* begin theband */
+#content .content-section {
+    width: 800px;
+    min-height: 459px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+.content-section .heading-section {
+    color: #000;
+    margin: 10px 0;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.content-section .heading-sub-section {
+    opacity: 0.6;
+    color: #000;
+    font-size: 15px;
+    margin: 15px 0px;
+    text-align: center;
+    font-style: italic;
+}
+
+.content-section .about-section {
+    color: #000;
+    font-size: 15px;
+    margin: 15px 0px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+#content .member-list {
+    padding: 32px 0px;
+}
+
+.member-list .member-item {
+    float: left;
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+.member-item .member-content {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+.member-item .member-img {
+    margin: 0px 0px 16px;
+    height: 154px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* Begin tour */
+
+#content .tour-section {
+    background-color: #000;
+}
+
+.tour-section .section-ticket {
+    list-style: none;
+    background-color: #fff;
+}
+
+.section-ticket .item-ticket {
+    line-height: 22.5px;
+    min-height: 39.5px;
+    font-size: 15px;
+    color: #757575;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-ticket .item-sub-ticket {
+    color: #fff;
+    padding: 3px 8px;
+    margin: 0px 0px 0px 16px;
+    background-color: #f44336;
+}
+
+.item-ticket .item-3-ticket {
+    width: 24px;
+    float: right;
+    height: 24px;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 50%;
+    background: #000;
+    margin: -1px 16px 0px 0px;
+}
+
+.tour-section .place-section {
+    color: #fff;
+    font-size: 15px;
+    margin: 0px -16px;
+    padding: 32px 8px;
+}
+
+.place-section .place-item {
+    float: left;
+    color: #000;
+    padding: 0px 8px;
+    width: calc(100% / 3);
+    margin: 0px 0px 16px 0px;
+}
+
+.place-item .place-img {
+    width: 100%;
+}
+
+.place-item .place-img:hover {
+    opacity: 0.6;
+}
+
+.place-item .place-content {
+    padding: 0px 16px;
+    margin: -4px 0px 0px 0px;
+    background-color: #fff;
+}
+
+.place-content .place-heading {
+    font-weight: 400;
+    padding: 15px 0px;
+}
+
+.place-content .place-time {
+    opacity: 0.6;
+}
+
+.place-content .place-about {
+    margin: 15px 0px;
+}
+
+.place-content .place-buy-ticket {
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: 1px solid #000;
+    background-color: #000;
+    margin: 0px 0px 16px 0px;
+}
+
+.place-content .place-buy-ticket:hover {
+    color: #000;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+/* Begin contact */
+
+
+.contact-section .contact-container {
+    padding: 32px 0px;
+}
+
+.contact-container .contact-about {
+    float: left;
+    width: calc(100% / 2);
+}
+
+.contact-about .ti-icon-cv {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-about .contact-cv {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.contact-about .contact-cv li {
+    margin: 4px 0px;
+}
+
+.contact-about .contact-input-topleft {
+    width: calc(96% / 2);
+    font-size: 15px;
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.contact-about .contact-input-topright {
+    width: calc(96% / 2);
+    font-size: 15px;
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-about .contact-input-bottom {
+    font-size: 15px;
+    margin-top: 8px;
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-about .contact-button {
+    margin-top: 16px;
+    float: right;
+    border: 1px solid #000;
+    padding: 10px 14px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+}
+
+.contact-about .contact-button:hover {
+    color: #000;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+
+/* begin image */
+
+.content-image .image-section {
+    width: 100%;
+    display: block;
+}
+
+
+
+/* begin footer */
+#footer {
+    min-height: 216.5px;
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .footer-list {
+    margin-top: 10px;
+}
+
+#footer .footer-list a {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    padding: 1px;
+    text-decoration: none;
+}
+
+.footer-section .footer-about {
+    font-size: 15px;
+    margin: 15px 0px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-section .footer-about a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* end footer */
+
+/* begin modal */
+.modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    /* display: flex; */
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal .modal-container {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    padding: 0px 16px;
+    position: relative;
+    background-color: #fff;
+}
+
+.modal-container .modal-icon-close {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 19px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.modal-container .modal-icon-close:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.modal-container .modal-header {
+    height: 130px;
+    display: flex;
+    color: #fff;
+    font-size: 30px;
+    margin: 0px -16px 15px;
+    letter-spacing: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: #009688;
+}
+
+.modal-header .modal-icon-header {
+    margin-right: 16px;
+}
+
+.modal-body .modal-label {
+    font-size: 16px;
+}
+
+.modal-body .modal-input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0px 20px;
+}
+
+.modal-body .modal-icon-check {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.modal-body .modal-button {
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    padding: 19px 0px;
+    background-color: #009688;
+}
+
+.modal-body .modal-button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal-footer .modal-help {
+    display: inline-block;
+    float: right;
+    margin: 30px 0px;
+    font-size: 15px;
+}
+
+.modal-footer .modal-help a {
+    color: rgb(33, 150, 243);
+}

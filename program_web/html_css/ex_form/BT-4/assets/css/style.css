@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+    display: flex;
+    width: 460px;
+    height: 460px;
+    background-color: aqua;
+    background: url('../img/abstract-low-poly-background_1409-1861.webp') top center/cover no-repeat ;
+}
+
+.form-container{
+    color: #fff;
+    margin: auto;
+    width: 60%;
+    height: 80%;
+    background-color: #000;
+}
+
+.heading{
+    text-align: center;
+}
+
+/* user */
+.user {
+    font-size: 35px;
+    display: inline-block;
+    background-color: #ef2a27;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    margin-top: -38px;
+}
+
+.name{
+    font-size: 18px;
+    padding: 15px;
+}
+
+/* input */
+.input-block{
+    padding: 0px 8%;
+}
+
+.input-item{
+    margin-bottom: 20px;
+}
+
+.input-item .heading-text{
+
+}
+
+.input-item .input-text{
+    display: flex;
+}
+
+.input-item .input-text input{
+    color: #fff;
+    padding: 10px 0px;
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #fff;
+}
+
+/* submit */
+
+.btn{
+    padding: 0 8%;
+    display: flex;
+    overflow: hidden;
+}
+
+.btn .submit-btn{
+    height: 35px;
+    flex: 1;
+    background-color: #ef2a27;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none;
+}
+
+.btn .submit-btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* about */
+.footer{
+    padding: 0 8%;
+    margin-top: 20px;
+}
+
+.footer .about-text{
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+.footer .about-text a{
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: none;
+}

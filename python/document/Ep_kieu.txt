@@ -1,0 +1,1 @@
+ord()		: chuyển chữ cái ra số trong mã ascii

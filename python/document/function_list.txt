@@ -1,0 +1,15 @@
+a = [1,1,1,4,8,9,7]
+b = a.....
+
+a.index(1)			: điếm số lần xuất hiện
+a.coppy()			: sao chép
+a.clear				: xoá toàn bộ
+a.append(6)			: thêm phần tử
+a.extend([4,5])	: thêm phần tử của list
+a.insert(location:1,element:5): thêm phần tử vào vị trí
+a.pop(1)				: bỏ đi phần tử thứ i trong list mặc định cuối cùng
+a.remove(1)			: xoá đi phần tử số mấy trong list
+a.reverse()			: đảo ngược
+a.sort()				: sắp xếp tăng dần (key=none,reverse=false)
+a.sort(reverse=true):sắp xếp giảm dần
+

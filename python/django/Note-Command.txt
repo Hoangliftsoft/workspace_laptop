@@ -1,0 +1,44 @@
+init    : đây là model của python
+setting : một số biến toàn cục và cấu hình website
+urls    : Chứa đường dẫn của website
+wsgi.py : Đẩy website lên server (deployment)
+
+migrations  : lưu lại lịch sử thay đổi database
+init        : báo hiệu là model của python
+admin       : để đăng kí models
+models      : tạo bảo database vd như server
+apps        : định nghĩa tên app và cấu hình
+tests       : viết testcase
+views       : giao diện
+
+request     : gửi yêu cầu lên server
+
+
+
+
+
+
+
+
+Lộ trình backend:
+    + html,css,js cơ bản
+    + django
+        + database (csdl)
+        + PyThon
+        + cài đặt, tạo, run project
+        + cấu trúc của 1 dự án
+        + tạo app trong
+        + cài đặt cấu hình app trong
+        + chức năng :
+            . view
+            . model
+            . static
+            . template
+            . form
+        + urls  : định tuyến và link
+        + phương thức html: get, post
+        + url -> view -> xử lý logic -> template
+        + costum admin
+        + phân quyền user
+        + django FrameWork reading API 
+        + json web token : check user login bằng token

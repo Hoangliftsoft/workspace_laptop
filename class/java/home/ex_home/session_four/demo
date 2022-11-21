@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class demo {
+    // check snt
+    private static int snt(int n) {
+        if (n < 2)
+            return 0;
+        for (int i = 2; i <= Math.sqrt(n); ++i) {
+            if (n % i == 0)
+                return 0;
+        }
+        return 1;
+    }
+
+    // tang dan
+    private static int tangDan(int n) {
+        int tam = n % 10;
+        n /= 10;
+        while (n > 0) {
+            if (tam < n % 10) {
+                return 0;
+            }
+            tam = n % 10;
+            n /= 10;
+        }
+        return 1;
+    }
+
+    // giam dan
+    private static int giamDan(int n) {
+        int tam = n % 10;
+        n /= 10;
+        while (n > 0) {
+            if (tam > n % 10) {
+                return 0;
+            }
+            tam = n % 10;
+            n /= 10;
+        }
+        return 1;
+    }
+
+    public static void main(String[] agrs) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Nhap n: ");
+        int n = scanner.nextInt();
+            if (snt(n) == 1 && (tangDan(n) == 1 || giamDan(n) == 1)) {
+                System.out.print(n + " yes");
+
+        }
+    }
+}
